@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 450px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #66b2ff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.translator-form label {
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.translator-form textarea,
+.translator-form select,
+.translator-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    background-color: #555;
+    color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+select {
+    background-color: #444;
+}
+
+button {
+    background-color: #66b2ff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3399ff;
+}
+
+.translation-result {
+    margin-top: 20px;
+}
+
+#outputText {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #ccc;
+    min-height: 60px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.light-mode {
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+.light-mode .container {
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode h1 {
+    color: #0078D7;
+}
+
+.light-mode .translator-form textarea,
+.light-mode .translator-form select,
+.light-mode .translator-form button,
+.light-mode #outputText {
+    background-color: white;
+    color: #333;
+    border-color: #ddd;
+}
+
+button#toggle-theme {
+    margin-top: 15px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+button#toggle-theme:hover {
+    background-color: #ddd;
+}

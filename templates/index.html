@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor con IA - Modo Oscuro/Claro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Traductor con Azure AI</h1>
+        <div class="translator-form">
+            <label for="inputText">Texto a traducir:</label>
+            <textarea id="inputText" rows="4" cols="50" placeholder="Escribe el texto aquí"></textarea>
+
+            <label for="targetLanguage">Idioma de destino:</label>
+            <select id="targetLanguage">
+                <option value="en">Inglés</option>
+                <option value="es">Español</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+            </select>
+
+            <button id="translateButton">Traducir</button>
+        </div>
+
+        <div class="translation-result">
+            <h2>Traducción:</h2>
+            <p id="outputText"></p>
+        </div>
+        
+        <!-- Botón para alternar entre temas -->
+        <button id="toggle-theme">Cambiar a modo claro</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
